@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive answer area</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #666;
+                color: #fff;
+                padding: 15px;
+                text-align: center;
+            }
+            nav {
+                margin: 0;
+                padding: 10px;
+                background-color: #f4f4f4;
+            }
+            nav a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: #fff;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .question {
+                border-bottom: 1px solid #ddd;
+                padding: 10px 0;
+            }
+            .question h2 {
+                margin: 0;
+            }
+            .question .details {
+                font-size: 0.9em;
+                color: #666;
+            }
+            footer {
+                background-color: #666;
+                color: #fff;
+                padding: 15px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Interactive answer area</h1>
+            <h3>Welcome to our online Q&A section!</h3>
+        </header>
+        <nav>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;In this vibrant community, we are committed to creating an open, 
+                inclusive, and knowledgeable interactive platform. 
+                Whether you are a beginner or an expert, you can find your own stage here, 
+                share insights, ask questions, and seek answers.
+            </p>
+            <h4>Our goal</h4>
+            <ul>
+                <li>Knowledge sharing: Encourage users to share their professional knowledge, 
+                    experience, and insights to help others solve their confusion.</li>
+                <li>Learning and Growth: Providing a learning space where everyone can 
+                    draw new knowledge from others' answers and continuously grow.</li>
+                <li>Interactive communication: Promote communication and interaction among users, 
+                    and establish deep community connections.</li>
+            </ul>
+            <h4>Main functions</h4>
+            <ul>
+                <li>Question: When encountering difficulties, you can always ask questions here, 
+                    and our community members will provide answers as soon as possible.</li>
+                <li>Answer: When you come across a question that interests you, feel free to share 
+                    your insights and answers to help the questioner solve the problem.</li>
+                <li>Like and comment: Like valuable answers or leave your comment to discuss with other users.</li>
+                <li>Search and Filter: Use our search function to quickly find the questions and answers that 
+                    interest you. Meanwhile, you can also filter based on the classification of the questions 
+                    to obtain more accurate information.</li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h2>Hot Questions</h2>
+            <div class="question">
+                <h2>How to learn C language?</h2>
+                <div class="details">
+                    Questioner: John | Answerer: David | Date: July 1, 2024 | Number of likes: 2.3w
+                </div>
+                <p>Learning C language is a gradual process of accumulation and practice, 
+                    which requires starting from mastering basic knowledge, 
+                    practicing by writing simple programs, proficiently using programming tools, 
+                    reading excellent code to learn specifications, delving into advanced topics such 
+                    as memory management, pointer operations, and file I/O, participating in programming 
+                    competitions and challenges to solve practical problems, continuously learning and 
+                    communicating to expand knowledge and skills, and cultivating good study habits, 
+                    persistently striving and practicing.
+                </p>
+            </div>
+            <div class="question">
+                <h2>Do you have any recommended learning resources for self-learning C language?</h2>
+                <div class="details">
+                    Questioner: Alex | Answerer: Eve | Date: March 30, 2024 | Number of likes: 3.5w
+                </div>
+                <p>For students who want to deepen their learning of C language, 
+                    I recommend a series of high-quality learning resources. 
+                    Firstly, classic textbooks such as "C Programming Language" 
+                    (K&R edition) are a must read for every C language learner, 
+                    systematically introducing the basic knowledge and programming skills of the C language. 
+                    In addition, there are many excellent online tutorials and video courses on the internet, 
+                    such as C language courses on online education platforms like Coursera and edX, 
+                    which help learners understand and master C language in a vivid and intuitive way. 
+                    Meanwhile, open-source projects and communities on GitHub are also great places to learn C 
+                    language. You can enhance your programming skills and practical experience by reading, 
+                    participating, and contributing code. Finally, 
+                    don't forget to utilize community resources such as forums and blogs to exchange 
+                    experiences and skills with other C language learners and make progress together. 
+                    I hope these learning resources can help you better master the C language and embark 
+                    on your programming journey!</p>
+            </div>
+
+            <!-- 更多问题可以在这里添加 -->
+            <style>
+                .search-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .search-container input[type="text"] {
+                    flex: 1; /* 占据剩余空间 */
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px 0 0 4px;
+                }
+                .search-container input[type="submit"] {
+                    padding: 10px 20px; /* 增加一些内边距以更好地显示文本 */
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    background-color: #4CAF50;
+                    color: white;
+                    border-radius: 0 4px 4px 0;
+                    cursor: pointer;
+                    margin-left: -1px; /* 去除边框之间的间隙（可选） */
+                }
+                .search-container input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+            </style>
+    <div class="search-container">
+        <form action="search_results.php" method="GET">
+            <input type="text" name="query" placeholder="Enter keywords...">
+            <input type="submit" value="search">
+        </form>
+    </div>
+            <header>
+                <hr/>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;We promise to provide a safe and reliable Q&A environment, 
+                    ensuring that every user can freely express themselves and share knowledge here.
+                     At the same time, we will regularly review the Q&A content to ensure its quality and accuracy.</p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Whether you are a questioner seeking answers or a helpful answerer, 
+                    we eagerly look forward to your joining. Let's work together to create a better online Q&A community!</p>
+            </header>
+            <footer>
+                <h4>BACK↓</h4>
+                <a href="index.html">C Language Exploration Island-home page</a>
+            </footer>
+            <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&copy;All rights reserved;those responsible for unauthorized reproduction will be prosecuted!!!
+                <img src="33599dafd0eb93fee0e428fe5eb8238c6fb52f6c4f5b-lSi8Em_fw658.webp" width="15px">
+            </p>
+    </body>
+</html>

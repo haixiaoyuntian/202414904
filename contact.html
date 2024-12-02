@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Challenge</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        header a {
+                color: #fff;
+            }
+        section {
+            background-color: #fff;
+            margin-bottom: 2em;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #666;
+        }
+        .welcome-banner img {
+            width: 100%;
+            height: auto;
+        }
+        .event-info, .honor-board, .guide {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .countdown {
+            font-size: 1.5em;
+            color: #666;
+        }
+        .forum, .team-building {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .forum a, .team-building a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .forum a:hover, .team-building a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <header>
+        <h1>Advanced Challenge</h1>
+    </header>
+    <div style="float: right;">
+        <img src="t017b2e72b1ed4b90cb.png" width="240px">
+        </div>
+        <section class="welcome-banner">
+            <h2 align="center">Welcome to the C Programming Challenge</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Since its establishment, 
+                this challenge has been successfully held multiple times. 
+                Each edition has attracted numerous programming enthusiasts from around the 
+                world to actively participate. On the stage of the challenge, 
+                many talented programmers stood out, and their excellent works not only won honors, 
+                but also brought valuable experience and inspiration to the entire programming community. 
+                With the continuous development and improvement of the challenge competition, 
+                it has become a highly anticipated programming event, 
+                attracting more and more attention and support.
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Our challenge aims to stimulate participants' innovative thinking, 
+                exercise their programming skills, and promote their in-depth learning and practice 
+                in the classic programming language of C through a series of carefully designed programming tasks. 
+                By participating in the challenge, participants can not only improve their programming skills, 
+                but also have the opportunity to communicate and learn from programming enthusiasts from different 
+                backgrounds, and make progress together.
+            </p>
+        </section>
+        <section class="event-info">
+            <h2>Current event information</h2>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Challenge Theme: National Youth Informatics Olympiad League (NOIP 2024)
+            </br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starting time: December 30, 2024 at 08:30
+            </br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End time: 13:00, December 30, 2024
+            </br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Registration deadline: As the registration deadline for NOIP 2024 is not 
+                explicitly mentioned in the publicly released information, and registration for such events usually 
+                ends some time earlier for organizers to prepare, an exact registration deadline cannot be given. 
+                However, based on the date of the event (November 30, 2024), 
+                it can be reasonably inferred that the registration deadline should be within a certain period of 
+                time before the start of the event. It is recommended that interested participants closely follow 
+                official notifications from the Chinese Computer Society (CCF) or relevant organizations to obtain 
+                the most accurate registration information.
+            </p>
+            <div class="countdown">&nbsp;&nbsp;&nbsp;&nbsp;count down:<span id="countdown"></span></div>
+            <!-- 注意：倒计时功能需要JavaScript实现 -->
+        </section>
+        <section class="honor-board">
+            <h2>Honor List</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Chen Lijie: From 2010 to 2013, Chen Lijie achieved excellent results in NOIP and related competitions, 
+                including multiple first prizes and gold medals. 
+                He became one of the miraculous figures in the OI industry with his outstanding programming skills 
+                and passion for informatics.</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Wang Maohua: In the 2019 CSP Capability Certification (similar to NOIP), 
+                Wang Maohua, who was only 10 years old, won two first prizes 
+                in the popularization and improvement groups in Liaoning Province, 
+                breaking the record for the youngest provincial first prize winner in the national improvement group. 
+                He has had a strong interest in information technology since childhood and gradually emerged in the 
+                field of informatics through continuous learning and practice.</p>
+            <!-- 可以添加图片、链接等 -->
+        </section>
+        <section class="guide">
+            <h2>Competition Process</h2>
+    <ol>
+        <li>
+        <h3>Registration stage</h3>
+        <ul>
+        <li>Registration requirements: Students in junior and senior high school, 
+            as well as non computer major students in secondary vocational schools of the same age group 
+            (specific requirements are subject to the official notice issued by CCF in the current year)</li>
+        <li>Registration period: Usually starts from September of the current year and lasts until 
+            early November (for example, the registration period for 2024 is from October to November 6th at 14:00)</li>
+        <li>Registration method: The guidance teachers of the enrolled school will summarize the information 
+            of the qualified contestants and register with the NOI special envoy of the province where they are 
+            located. CCF does not accept individual registrations</li>
+        <li>Quota allocation: The competition quotas for each province are composed of three categories: 
+            A, B, and C. The specific quota allocation plan is determined by the organizing units of each province</li>
+        <li>Registration review: NOI provincial envoys should submit the confirmed list of participants 
+            to CCF for review within the prescribed time after the provincial announcement. 
+            Failure to submit within the deadline will be considered as giving up. After passing the CCF review, 
+            contestants can participate in the competition</li>
+        </ul>
+        </li>
+        <li>
+        <h3>Competition Stage</h3>
+        <ul>
+        <li>Competition time: The preliminary round is usually held on the afternoon of 
+            the third Saturday in October each year, while the semi-final round is held on the third Saturday 
+            in November (specific dates vary by year, such as November 30th for the 2024 semi-final round)</li>
+        <li>Competition format:
+        <ul>
+        <li>Preliminary round: usually a written or computer-based test, mainly testing the contestants' basic 
+            knowledge of computer science</li>
+        <li>Finals: For computer programming, the main test is the algorithm design and programming 
+            ability of the contestants</li>
+        </ul>
+        </li>
+        <li>Competition location: The preliminary round can have test centers set up in multiple cities, 
+            while the semi-finals are usually held at designated test centers in each province</li>
+        <li>Competition process:
+        <ul>
+        <li>Preliminary round: After filling out the registration form, contestants will participate in 
+            written or computer-based tests at the designated time and location. After the exam, the answer 
+            sheet will be bound and sealed by the chief invigilator, and signed by the person in charge of the 
+            exam center. Each competition area will organize grading according to the national grading standards</li>
+        <li>Finals: Based on the preliminary results, the contestants for the finals will be determined in 
+            descending order. The semi-finals will involve computer programming, and contestants will submit 
+            their answer sheets according to the "NOIP Answer Sheet Submission Requirements". After the semi-finals, 
+            the invigilator should immediately collect the procedures of all participating contestants and submit 
+            them to the evaluation team of this region for evaluation</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <h3>Awards and follow-up</h3>
+        <ul>
+        <li>Announcement of Award List: Each competition area will determine the list of winners based on 
+            the number of awards given by CCF and the results of the contestants' semifinals, and report it to 
+            CCF for review before announcing it</li>
+        <li>Follow up opportunities: NOIP winners have the opportunity to participate in higher-level 
+            competitions, such as the National Youth Informatics Olympiad (NOI) or even the International 
+            Informatics Olympiad (IOI). At the same time, the first prize winner will also gain significant 
+            advantages in the youth entrepreneurship classes, comprehensive evaluation tests, and 
+            special preliminary review stages of well-known universities</li>
+        </ul>
+        </li>
+        </ol>
+    
+<h2>Technical Guidelines</h2>
+<ul>
+<li>Programming Language: NOIP Finals usually support programming languages such as C++. 
+    Contestants should be proficient in at least one programming language and able to flexibly use 
+    it for designing data structures and algorithms</li>
+<li>Data Structures and Algorithms: Familiarity with common data structures (such as arrays, 
+    linked lists, stacks, queues, trees, graphs, etc.) and algorithms (such as sorting, searching, 
+    recursion, dynamic programming, greed, etc.) is the foundation for participating in the competition.
+     Contestants should be able to choose appropriate data structures and algorithms as needed to solve 
+     problems</li>
+<li>Programming skills: Master good programming habits, such as code specifications, variable naming, 
+    comments, etc. Meanwhile, it is also very important to be familiar with debugging techniques and 
+    error handling methods</li>
+<li>Simulation practice: By participating in simulation competitions or practicing past exam questions 
+    on your own, you can improve your problem-solving speed and accuracy. Simulated exercises can help 
+    athletes better adapt to the competition environment and improve their psychological resilience</li>
+<li>Learning resources: You can refer to the CCF official website, NOI official website, 
+    as well as relevant educational forums and communities to obtain learning resources, 
+    including competition outlines, past exam questions, problem-solving skills, etc</li>
+</ul>
+        </section>
+        <!-- 假设比赛详情页是一个单独的页面，这里提供链接 -->
+        <section>
+            <h2>Competition details page</h2>
+        <p>
+                <a href="challenge-details.html">Click here to view specific programming challenge questions 
+                and online editors
+            </a>
+        </p>
+        </section>
+        <section class="forum">
+            <h2>Community Interaction Area - Forum/Discussion Area</h2>
+            <p>Participants can exchange problem-solving ideas, share programming skills, 
+                and ask questions to solve problems here.</p>
+            <p><a href="forum.html">Enter the forum</a></p>
+        </section>
+        <section class="team-building">
+            <h2>Community Interaction Zone - Team Building</h2>
+            <p>Participants can form or join teams to complete tasks together.</p>
+            <p><a href="team-building.html">Build a team</a></p>
+        </section>
+        <!-- 成果展示与奖励部分可以放在单独的页面上，这里提供链接或概述 -->
+        <section>
+            <h2>Achievement display and rewards</h2>
+            <p>After the competition, all entries will be displayed and an award ceremony will be held.</p>
+            <p><a href="results-and-awards.html">View achievements and rewards</a></p>
+        </section>
+    <script>
+        // 设置赛事开始时间（格式：年-月-日 时:分:秒）
+        var eventStartTime = new Date('2024-12-30T08:30:00'); // 请确保时区正确
+ 
+        function updateCountdown() {
+            var now = new Date();
+            var distance = eventStartTime - now;
+ 
+            // 计算天数、小时数、分钟数和秒数
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+            // 确保所有时间单位都是两位数
+            days = String(days).padStart(2, '0');
+            hours = String(hours).padStart(2, '0');
+            minutes = String(minutes).padStart(2, '0');
+            seconds = String(seconds).padStart(2, '0');
+ 
+            // 更新倒计时显示
+            var countdownElement = document.getElementById('countdown');
+            countdownElement.textContent = days + 'day ' + hours + 'hour ' + minutes + 'minute ' + seconds + 'second';
+ 
+            // 如果倒计时结束，可以执行一些操作（例如隐藏倒计时显示）
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownElement.textContent = '赛事已开始！';
+            }
+        }
+ 
+        // 每秒更新一次倒计时
+        var interval = setInterval(updateCountdown, 1000);
+ 
+        // 初始化倒计时显示（可选，因为setInterval会在第一次调用时更新显示）
+        updateCountdown();
+    </script>
+    <header>
+        <hr/>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;In short, our challenge is a comprehensive programming event that 
+            combines practical exercises, learning exchanges, and self challenges. 
+            By participating in the challenge, participants can comprehensively enhance their 
+            programming skills and lay a solid foundation for their future career development.</p>
+        <nav>
+            <h4>BACK↓</h4>
+                <a href="index.html">C Language Exploration Island-home page</a>
+        </nav>
+    </header>
+        <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&copy;All rights reserved;those responsible for unauthorized reproduction will be prosecuted!!!
+            <img src="33599dafd0eb93fee0e428fe5eb8238c6fb52f6c4f5b-lSi8Em_fw658.webp" width="15px">
+        </p>
+</body>
+</html>
